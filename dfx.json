@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "student_register_backend": {
+      "main": "src/student_register_backend/main.mo",
+      "type": "motoko"
+    },
+    "student_register_frontend": {
+      "dependencies": [
+        "student_register_backend"
+      ],
+      "source": [
+        "src/student_register_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "student_register_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
